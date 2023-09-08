@@ -1,16 +1,12 @@
-# notes_app
+# Aplicativo de Gestão de Notas
+O Notes App é um aplicativo simples e eficiente para a gestão de notas. Com esta ferramenta, você pode facilmente criar, visualizar, editar e excluir suas notas de forma organizada e intuitiva.
 
-A new Flutter project.
+## Recursos Principais
+Criação de Notas: Crie notas facilmente com um simples clique.
 
-## Getting Started
+Edição de Notas: Edite suas notas a qualquer momento para adicionar ou atualizar informações.
 
-This project is a starting point for a Flutter application.
+Exclusão de Notas: Remova notas que não são mais necessárias com apenas um toque.
 
-A few resources to get you started if this is your first Flutter project:
+Listagem de Notas: Veja todas as suas notas em uma lista organizada para uma rápida referência.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

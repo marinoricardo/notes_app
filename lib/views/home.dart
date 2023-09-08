@@ -38,14 +38,10 @@ class Home extends StatelessWidget {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  hintStyle: TextStyle(
-                    fontSize: 18,
-                  ),
                   hintText: 'Pesquise..',
                   isDense: true,
                   prefixIcon: Icon(
                     Icons.search,
-                    size: 24,
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
