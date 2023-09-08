@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:notes_app/views/note/form.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -19,12 +20,16 @@ class Home extends StatelessWidget {
                   Text(
                     'Notas',
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 28,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   CircleAvatar(
-                    child: Icon(Icons.person),
+                    backgroundColor: Colors.grey,
+                    child: Icon(
+                      Icons.person,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),
@@ -61,13 +66,14 @@ class Home extends StatelessWidget {
                           'Titulo da Nota',
                           style: TextStyle(
                             fontSize: 18,
+                            color: Colors.black,
+                            height: 1.5,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         subtitle: Text('descricao da nota'),
-                        trailing: Checkbox(
-                          value: false,
-                          onChanged: (value) {},
+                        trailing: Icon(
+                          Icons.delete,
                         ),
                       ),
                     );
@@ -79,9 +85,20 @@ class Home extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        backgroundColor: Colors.grey,
+        onPressed: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) {
+                return NoteForm();
+              },
+            ),
+          );
+        },
         child: Icon(
           Icons.add,
+          size: 35,
+          color: Colors.white,
         ),
       ),
     );
